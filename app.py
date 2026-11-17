@@ -1,12 +1,6 @@
-import os, sys
 def get_even(nums):
-    result = []
-    for n in nums:
-        if n % 2 == 0:
-            result.append(n)
-    return result
+    return [n for n in nums if n % 2 == 0]
+
+
 def total(items):
-    t=0
-    for i in items:
-        t = t + i
-    return t
+    return sum(items)
